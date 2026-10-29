@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Categorías</title>
+  </head>
+  <body>
+    <main>
+      <h1>Lista de Categorias</h1>
+      <ul>
+        {% for categoria in categorias %}
+          <li>{{ categoria.id }} {{ categoria.nombre }}</li>
+        {% endfor %}
+      </ul>
+    </main>
+  </body>
+</html>
